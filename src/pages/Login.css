@@ -32,9 +32,10 @@ text-align: center;
 }
 
 a.back-link {
+  max-width: 320px;
   display: block;
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   color: #2A3439;
   font-weight: 500;
   text-decoration: none;

@@ -27,6 +27,7 @@ body {
     color: #2A3439;
     font-weight: 500;
     font-size: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -36,7 +37,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
     margin: 0 auto;
   }
 
@@ -63,7 +63,7 @@ body {
   cursor: pointer;
   border-radius: 30px;
   border: none;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .start-dash-btn:hover {
