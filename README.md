@@ -1,6 +1,4 @@
-<img src="public/cb-heading.jpg" alt="CitizenBull Header" width="50%" />
-
-# CitizenBull - Market Dashboard
+<img src="public/cb-heading.jpg" alt="CitizenBull Header" width="70%" />
 
 **CitizenBull** is a market dashboard web app that combines real-time stock data, financial news, and weather forecasts into a clean, modular interface. Built with React, it integrates multiple APIs and full user account functionality to simulate a production-ready experience.
 
