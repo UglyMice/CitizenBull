@@ -1,3 +1,6 @@
+body {
+  background-color: #EDFF00;
+}
 .icon-page {
     background-color: #EDFF00;
     display: flex;
@@ -66,4 +69,23 @@
 .start-dash-btn:hover {
   background-color: blue;
   color: #FFFFFF;
+}
+
+/* QUERIES */
+
+/* Small screen - phones, etc. */
+@media (max-width: 500px) {
+  .container h2 {
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+
+  .icon-container {
+    width: 100%;
+  }
+
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
 }
