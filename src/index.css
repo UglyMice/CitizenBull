@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter Tight', 'Inter', Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  /* Light Mode */
+  --theme-btn-bg-color: #DADADA;
+  --bg-color: #F0F0F0;
+  --text-color: #2A3439;
+  --accent-color: #EDFF00;
+  --card-color: #FFFFFF;
+  --time-weight: 400;
+  --marketnews-font-weight: 500;
+  --companyoverview-companyname-weight: 600;
+  --scroll-color: rgb(33, 38, 49, 2%);
+  --a-color: blue;
+  --companynews-hover: var(--text-color);
+  --companynews-border: 1px solid #DADADA;
+  --marketnews-h-color: var(--text-color);
+  --marketnews-p-color: var(--text-color);
+  --watchlist-outer: #E6E6E6;
+  --watchlist-inner: #DADADA;
+}
+
+  /* Dark Mode Overrides */
+.dark-mode {
+  --theme-btn-bg-color: #2D323D;
+  --bg-color: #212631;
+  --text-color: #FFFFFF;
+  --card-color: #2D323D;
+  --time-weight: 300;
+  --marketnews-font-weight: 300;
+  --companyoverview-companyname-weight: 500;
+  --scroll-color: rgba(237, 239, 243, 0.066);
+  --a-color: #EDFF00;
+  --companynews-hover: var(--accent-color);
+  --companynews-border: 1px solid #3E4553;
+  --marketnews-h-color: var(--accent-color);
+  --marketnews-p-color: #9BA600;
+  --watchlist-outer: #2D323D;
+  --watchlist-inner: #3E4553;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter Tight', 'Inter', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}

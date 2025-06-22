@@ -1,0 +1,78 @@
+.market-news {
+  padding: 0 1rem 1rem 1rem;
+  height: 49rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.market-news::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  background: linear-gradient(to top, var(--bg-color), transparent);
+  pointer-events: none;
+}
+
+.market-news h2 {
+  position: sticky;
+  height: 2.5rem;
+  top: 0;
+  background: var(--bg-color);
+  z-index: 1;
+  padding: 1rem 0 2.5rem 0;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: #a4a4a4;
+}
+
+.news-card {
+  background: var(--card-color);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.news-card h3 {
+  font-weight: var(--marketnews-font-weight);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--marketnews-h-color);
+}
+
+.news-card p {
+  font-family: 'inter';
+  font-size: 0.75rem;
+  color: var(--marketnews-p-color);
+}
+
+.news-card a {
+  color: var(--a-color);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+.news-card:hover {
+  border: 1px solid var(--accent-color);
+}
+
+/* SCROLL */
+
+.market-news::-webkit-scrollbar {
+  width: 6px;
+}
+
+.market-news::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 4px;
+}
+
+.market-news::-webkit-scrollbar-track {
+  background: transparent;
+}

@@ -1,0 +1,184 @@
+.company-panel {
+  padding: 1rem;
+  height: 49rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border-radius: 14px;
+}
+
+.ticker-search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 70%;
+  margin-left: 0;
+}
+
+.ticker-search input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 14px;
+  font-size: 0.875rem;
+}
+
+.ticker-search input:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.ticker-search input::placeholder {
+  color: #D1D1D1;
+}
+
+.cp-search-btn {
+  background-color: var(--accent-color);
+  color: #848484;
+  border: none;
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ticker-search input,
+.cp-search-btn {
+  height: 2.5rem;
+}
+
+.company-overview {
+  background: var(--card-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.company-overview h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.50rem;
+}
+
+#break {
+  background-color: lightgray;
+  width: 100%;
+  height: 0.1rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.company-overview p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.company-overview strong {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.company-overview a {
+  text-decoration: underline;
+  color: var(--a-color);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.change {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.change.positive {
+  color: green;
+}
+
+.change.negative {
+  color: red;
+}
+
+.company-news .news-headline {
+  margin-bottom: 0.75rem;
+  border-bottom: var(--companynews-border);
+  padding-bottom: 0.5rem;
+}
+
+.news-headline {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.news-headline:hover {
+  font-weight: 600;
+}
+
+.news-headline small {
+  font-size: 0.7rem;
+  color: var(--text-color);
+}
+
+.company-news h3 {
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: #a4a4a4;
+}
+
+.news-headline a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.news-headline a:hover {
+  color: var(--companynews-hover);
+}
+
+
+.company-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.company-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.company-name {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: var(--companyoverview-companyname-weight);
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+/* SCROLL */
+
+.company-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.company-panel::-webkit-scrollbar-thumb {
+  background-color: rgb(33, 38, 49, 2%);
+  border-radius: 4px;
+}
+
+.company-panel::-webkit-scrollbar-track {
+  background: transparent;
+}

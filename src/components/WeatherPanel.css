@@ -1,0 +1,136 @@
+.weather-panel {
+  background: var(--accent-color);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2A3439;
+}
+
+.timezone {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #2A3439;
+}
+
+.temp,
+.condition {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2A3439;
+}
+
+.forecast-box {
+  background-color: rgb(225, 241, 2);
+  border-radius: 14px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+}
+
+.forcast-day-containers {
+  display: flex;
+  width: 100%;
+}
+
+.forecast-label {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #BBC809;
+}
+
+.forecast-day {
+  min-width: 35%;
+  text-align: left;
+  color: #2A3439;
+}
+
+.forecast-date,
+.forecast-temp {
+  font-size: 0.8rem;
+}
+
+.forecast-detail {
+  font-size: 0.60rem;
+}
+
+.forecast-temp {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.forecast-detail {
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+/* QUERIES */
+
+/* Large screen adjustments */
+@media (max-width: 1380px) {
+  .forecast-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .weather-panel {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .forecast-box {
+    margin-top: 0;
+  }
+
+  .forecast-box {
+    width: 70%;
+  }
+
+  .forecast-label,
+  .forecast-date,
+  .forecast-day,
+  .forecast-detail {
+    font-size: 0.80rem;
+  }
+}
+
+/* Mid screen - tablets, etc. */
+@media (max-width: 565px) {
+  .weather-panel {
+    flex-direction: column;
+  }
+
+   .forecast-box {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .forecast-label,
+  .forecast-date,
+  .forecast-day,
+  .forecast-detail {
+    font-size: 0.80rem;
+  }
+}

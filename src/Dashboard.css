@@ -1,0 +1,114 @@
+.dashboard {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.dashboard .dark-mode-toggle {
+  background-color: var(--theme-btn-bg-color);
+  color: #848484;
+  text-align: center;
+  font-size: 0.6rem;
+  border-radius: 14px;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.user-time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+ .left .weather-watchlist-section {
+  display: flex;
+  flex-direction: column;
+ }
+
+.left {
+  max-width: 28%;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.center {
+  max-width: 30%;
+}
+
+
+/* SCROLL */
+
+.left::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 4px;
+}
+
+.left::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* THEME TOGGLE */
+.dark-mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-color);
+  z-index: 1000;
+  padding: 0;
+  line-height: 1;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--accent-color);
+}
+
+/* QUERIES */
+
+/* Large screen adjustments */
+@media (max-width: 1000px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .left {
+    min-width: 100%;
+  }
+
+  .center {
+    min-width: 100%;
+  }
+
+  .dashboard .dark-mode-toggle {
+    right: 1.2rem;
+  }
+}
+
+/* Mobile (small screens) */
+@media (max-width: 480px) {
+  .dashboard .dark-mode-toggle {
+    visibility: hidden;
+  }
+}

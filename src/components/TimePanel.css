@@ -1,0 +1,57 @@
+.time-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.time-and-date,
+.suntime {
+    width: 100%;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.suntime p {
+    font-size: 1.1vw;
+    display: inline;
+}
+
+.sunset {
+    margin-left: 0.7rem;
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: var(--time-weight);
+    margin-top: -0.6rem;
+    margin-bottom: -0.9rem;
+}
+
+.date {
+    font-size: 1.1vw;
+}
+
+/* QUERIES */
+
+/* Large screen adjustments */
+@media (max-width: 1290px) {
+  .time {
+    font-size: 4.6vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .time-panel {
+    margin-bottom: 1rem;
+  }
+  
+  .time {
+    font-size: 4rem;
+  }
+
+  .date,
+  .suntime p {
+    font-size: 1rem;
+  }
+}

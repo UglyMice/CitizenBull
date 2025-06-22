@@ -1,0 +1,86 @@
+.welcome-page {
+  background-color: #EDFF00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  height: 100vh;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.welcome-page h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #2A3439;
+}
+
+.caption {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #2A3439;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  color: #2A3439;
+  font-size: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.welcome-buttons button {
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+}
+
+.login-btn {
+  background-color: #2A3439;
+  color: #FFFFFF;
+}
+
+.signup-btn {
+  background-color: #bbc1c4;
+  color: #2A3439;
+  margin-top: 1rem;
+}
+
+.break {
+  background-color: #2A3439;
+  width: 100%;
+  height: 1.3px;
+  margin-top: 1rem;
+}
+
+.guest-btn {
+  background-color: #EDFF00;
+  color: #2A3439;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: blue;
+  color: #FFFFFF;
+}
+
+.guest-btn:hover {
+  font-weight: 600;
+  font-style: italic;
+}

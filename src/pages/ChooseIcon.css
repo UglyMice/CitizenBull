@@ -1,0 +1,69 @@
+.icon-page {
+    background-color: #EDFF00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    height: 100vh;
+  }
+  
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+}
+
+.icon-page h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #2A3439;
+}
+
+  .container h2 {
+    color: #2A3439;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .icon-container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+  }
+
+  .icon {
+    object-fit: contain;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .icon.selected {
+    border: 4px solid white;
+    transform: scale(1.2);
+}
+
+.start-dash-btn {
+  background-color: #2A3439;
+  color: #FFFFFF;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.start-dash-btn:hover {
+  background-color: blue;
+  color: #FFFFFF;
+}
