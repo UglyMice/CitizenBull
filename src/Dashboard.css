@@ -1,3 +1,7 @@
+body {
+  background-color: var(--bg-color);
+}
+
 .dashboard {
   background-color: var(--bg-color);
   display: flex;

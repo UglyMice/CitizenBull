@@ -62,6 +62,14 @@ function Dashboard () {
     setDarkMode(now >= sunsetTime);
   }, [weather, autoDarkMode]);
 
+  useEffect(() => {
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+}, [darkMode]);
+
   function toggleDarkMode() {
     setDarkMode((prev) => {
       if (autoDarkMode) setAutoDarkMode(false);
